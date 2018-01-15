@@ -1,0 +1,113 @@
+a{
+	text-decoration: none;
+}
+/*Center Vertical Paddingl*/
+.cvp{
+	padding: 1.5em 0;
+}
+.backg-cyan{
+	background-color: #31C6C7;
+}
+.backg-orange{
+	background-color: #FF7600;
+}
+.backg-gray{
+	background-color: #EBEBEB;
+}
+.backg-green{
+	background-color: #74AA00
+}
+.backg-yellow{
+	background-color: #FFC500;
+}
+.text-green-title{
+	color: #7DAF12;
+}
+.main-menu{
+	background-color: rgba(0,0,0,.5);
+}
+.main-menu ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+.main-menu ul li{
+	padding: 0 2em;
+}
+.main-menu ul li a{
+	
+}
+
+.wwa-section{
+
+}
+
+/*Plans section*/
+.plans-section{
+	background-color: #EBEBEB;
+}
+.plans-section__card{
+	box-shadow: 3px 3px 9px #6666669c;
+	min-height: 600px;
+	padding-bottom: 1rem;
+}
+.plans-section__card-title{
+	color: #fff;
+}
+.plans-section__card-body{
+	padding: 0px 18px;
+}
+.plans-section__card-footer{
+	margin: 20px 0;
+}
+.plans-section__card-footer a{
+	padding: .5rem 7rem;
+}
+.plans-section__observation{
+	font-size: 10px;
+	padding: 1em 0;
+}
+
+/*invitation section*/
+.invitation-section p{
+	font-size: 1.5rem;
+	padding: 5em 0;
+}
+/*Attraction section*/
+.attractions-section__box{
+	margin: 1em;
+	min-height: 200px;
+}
+
+/*Blogs section*/
+.blogs-section__card{
+	box-shadow: 3px 3px 9px #6666669c;
+	margin: 1em 0;
+}
+.blogs-section__card img{
+	width: 100%;
+}
+
+/*Moral section*/
+.moral-section{
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+.moral-section div{
+	border-right: 1px solid #ccc;
+}
+.moral-section div:last-child{
+	border-right: none;
+}
+
+/*Footer section*/
+footer{
+	background-color: #673F1D;
+}
+footer div{
+	color: inherit;
+}
+/*Text-dimensions*/
+.text-1rem{
+	font-size: 1rem;
+}
