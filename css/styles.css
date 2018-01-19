@@ -1,4 +1,4 @@
-a{
+a, a:hover{
 	text-decoration: none;
 }
 /*Center Vertical Paddingl*/
@@ -24,20 +24,52 @@ a{
 	color: #7DAF12;
 }
 .main-menu{
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(255,255,255,.5);
+	position: fixed;
 }
 .main-menu ul{
 	list-style: none;
 	display: flex;
 	justify-content: center;
 }
-.main-menu ul li{
+.main-menu nav ul li{
 	padding: 0 2em;
 }
-.main-menu ul li a{
-	
+.main-menu nav ul li a{
+	color: #464545;
+	position: relative;
 }
-
+.main-menu nav ul li a:hover{
+	color: #7DAF12;
+}
+.main-menu nav ul li a:before{
+	content:"";
+	background-color: #7DAF12;
+	height: 0;
+	transition: .5s all;
+	position: absolute;
+	bottom: -3px;
+	width: 0;
+}
+.main-menu nav ul li a:hover:before{
+	height: 2px;
+	width: 100%;
+}
+.banner-section{
+	background-image: url("../img/atardecermain.jpg");
+	background-position: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 600px;
+	position: relative;
+}
+.register-box{
+	background-color: #fff;
+	position: absolute;
+}
+.register-box form label{
+	display: block;
+}
 .wwa-section{
 
 }
@@ -61,7 +93,7 @@ a{
 	margin: 20px 0;
 }
 .plans-section__card-footer a{
-	padding: .5rem 7rem;
+	padding: .5rem 5rem;
 }
 .plans-section__observation{
 	font-size: 10px;
@@ -69,6 +101,12 @@ a{
 }
 
 /*invitation section*/
+.invitation-section{
+	background-image: url("../img/atardecermain.jpg");
+	background-position: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .invitation-section p{
 	font-size: 1.5rem;
 	padding: 5em 0;

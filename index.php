@@ -8,19 +8,73 @@
 	<link rel="stylesheet" href="css/tools.css">
 </head>
 <body>
-	<div class="ed-container full">
-		<nav class="main-menu ed-item s-100">
+	<div class="main-menu ed-container full">
+		<nav class="ed-item s-100">
 			<ul>
-				<li>HOME</li>
-				<li>QUIENES SOMOS</li>
-				<li>PLANES</li>
-				<li>ATRACCIONES</li>
-				<li>BLOG</li>
-				<li>CONTACTO</li>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#wwa-section">QUIENES SOMOS</a></li>
+				<li><a href="#plans-section">PLANES</a></li>
+				<li><a href="#attractions-section">ATRACCIONES</a></li>
+				<li><a href="#blogs-section">BLOG</a></li>
+				<li><a href="#">CONTACTO</a></li>
 			</ul>
 		</nav>
 	</div>
-	<div class="wwa-section ed-container">
+	<div class="banner-section ed-container full">
+		<div class="register-box ed-item s-100 l-30 ed-container">
+			<h2 class="text-green-title">RESERVA AHORA</h2>
+			<form action="" class=" ed-item s-100 ed-container">
+				<div class="ed-item s-100">			
+					<label for="user">Nombre</label>
+					<input type="text" name="user">
+				</div>
+				<div class="ed-item s-100">	
+					<label for="mail">Correo electrónico</label>
+					<input type="email" name="mail">
+				</div>
+				<div class="ed-item s-100 l-50">
+					<label for="date">FECHA</label>
+					<select name="date" id="">
+						<option value="">1</option>
+						<option value="">2</option>
+					</select>
+				</div>
+				<div class="ed-item s-100 l-50">
+					<label for="people">PERSONAS</label>
+					<select name="people" id="">
+						<option value="">1</option>
+						<option value="">2</option>
+					</select>
+				</div>
+				<div class="ed-item s-100 l-50">
+					<label for="oldpeople">ADULTOS</label>
+					<select name="oldpeople" id="">
+						<option value="">1</option>
+						<option value="">2</option>
+					</select>
+				</div>
+				<div class="ed-item s-100 l-50">
+	
+					<label for="boys">NIÑOS</label>
+					<select name="boys" id="">
+						<option value="">1</option>
+						<option value="">2</option>
+					</select>
+				</div>
+				<div class="ed-item s-100 l-50">	
+					<label for="plan">PLAN</label>
+					<select name="plan" id="">
+						<option value="">plan1</option>
+						<option value="">plan2</option>
+					</select>
+				</div>
+			<div class="ed-item s-100">	
+				<button class="text-white backg-green">ENVIAR</button>
+			</div>
+			</form>
+		</div>
+	</div>
+	<div class="wwa-section ed-container flex-h-center">
 		<div class="ed-item s-100">
 			<h2 class="cvp text-green-title text-center">QUIENES SOMOS</h2>
 		</div>
@@ -28,12 +82,12 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolor, quas eveniet voluptatem quos commodi nisi! Voluptate ea aliquid iure dolore, rem cupiditate alias, repellat nam officia quidem autem doloremque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quo corporis quae nulla blanditiis quod facilis velit at. Odio ut, doloremque, explicabo totam consequuntur temporibus debitis. Autem, cupiditate! Deleniti, impedit.</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum autem voluptates eos, tempore et porro impedit ducimus sapiente iusto, itaque. Molestias eveniet nostrum necessitatibus, soluta doloremque porro quisquam ea delectus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, sunt, laudantium! Earum ipsum dolorem iusto. Amet perspiciatis quisquam sint facilis blanditiis animi, atque sed necessitatibus saepe doloremque suscipit, asperiores, ratione.</p>
 		</div>
-		<div class="ed-item base-100 l-70">
+		<div class="ed-item base-100 l-60">
 			<img src="https://dummyimage.com/600x400/000/fff" alt="">
 		</div>
 	</div>
 	<div class="plans-section ed-container flex-h-center full">
-		<div class="ed-item s-100 l-30">
+		<div class="ed-item s-100 l-25">
 			<div class="plans-section__card backg-white">
 				<div class="plans-section__card-title backg-cyan">
 					<h3 class="text-center cvp"><span class="text-1rem">PLAN</span><br> ALMENDRA</h3>
@@ -46,7 +100,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="ed-item s-100 l-30">
+		<div class="ed-item s-100 l-25">
 			<div class="plans-section__card backg-white">
 				<div class="plans-section__card-title backg-orange">
 					<h3 class="text-center cvp"><span class="text-1rem">PLAN</span><br>REGIONAL</h3>
@@ -59,7 +113,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="ed-item s-100 l-30">
+		<div class="ed-item s-100 l-25">
 			<div class="plans-section__card backg-white">
 				<div class="plans-section__card-title backg-yellow">
 					<h3 class="text-center cvp"><span class="text-1rem">PLAN</span><br>COSECHA</h3>
