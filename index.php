@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/ed-grid.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/tools.css">
+	<link href="https://file.myfontastic.com/wH6g93ZKMC8bRtvPn6F25Z/icons.css" rel="stylesheet">
 </head>
 <body>
 	<div class="main-menu ed-container full">
@@ -14,6 +15,7 @@
 				<li><a href="#">HOME</a></li>
 				<li><a href="#wwa-section">QUIENES SOMOS</a></li>
 				<li><a href="#plans-section">PLANES</a></li>
+				<li><a href="#"><img src="img/cafemontanamenu.png" alt=""></a></li>
 				<li><a href="#attractions-section">ATRACCIONES</a></li>
 				<li><a href="#blogs-section">BLOG</a></li>
 				<li><a href="#">CONTACTO</a></li>
@@ -21,16 +23,18 @@
 		</nav>
 	</div>
 	<div class="banner-section ed-container full">
-		<div class="register-box ed-item s-100 l-30 ed-container">
-			<h2 class="text-green-title">RESERVA AHORA</h2>
+		<div class="register-box ed-item s-100 l-25 ed-container">
+			<div class="ed-item s-100">	
+				<h2 class="text-center text-green-title">RESERVA AHORA</h2>
+			</div>	
 			<form action="" class=" ed-item s-100 ed-container">
 				<div class="ed-item s-100">			
 					<label for="user">Nombre</label>
-					<input type="text" name="user">
+					<input class="full-width" type="text" name="user">
 				</div>
 				<div class="ed-item s-100">	
 					<label for="mail">Correo electrónico</label>
-					<input type="email" name="mail">
+					<input class="full-width" type="email" name="mail">
 				</div>
 				<div class="ed-item s-100 l-50">
 					<label for="date">FECHA</label>
@@ -68,10 +72,21 @@
 						<option value="">plan2</option>
 					</select>
 				</div>
-			<div class="ed-item s-100">	
+			<div class="ed-item s-100 text-center">	
 				<button class="text-white backg-green">ENVIAR</button>
 			</div>
 			</form>
+		</div>
+		<div class="banner-message ed-item s-100 l-40">
+			<h3>Deja que tus manos se entrelacen con la naturaleza.</h3>
+			<span>Te esperamos</span>
+		</div>
+		<div class="banner-section__social ed-item s-5 no-padding">
+			<ul>
+				<li><a href="" class="backg-green"><i class="icon-facebook flex flex-v-center"></i></a></li>
+				<li><a href="" class="backg-green"><i class="icon-twitter-alt flex flex-v-center"></i></a></li>
+				<li><a href="" class="backg-green"><i class="icon-instagram flex flex-v-center"></i></a></li>
+			</ul>
 		</div>
 	</div>
 	<div class="wwa-section ed-container flex-h-center">
@@ -83,14 +98,18 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum autem voluptates eos, tempore et porro impedit ducimus sapiente iusto, itaque. Molestias eveniet nostrum necessitatibus, soluta doloremque porro quisquam ea delectus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, sunt, laudantium! Earum ipsum dolorem iusto. Amet perspiciatis quisquam sint facilis blanditiis animi, atque sed necessitatibus saepe doloremque suscipit, asperiores, ratione.</p>
 		</div>
 		<div class="ed-item base-100 l-60">
-			<img src="https://dummyimage.com/600x400/000/fff" alt="">
+			<img src="img/paisajemedio1.png" alt="">
 		</div>
 	</div>
 	<div class="plans-section ed-container flex-h-center full">
+		<div class="ed-item s-100">
+			<h2 class="text-green-title">PLANES</h2>
+		</div>
 		<div class="ed-item s-100 l-25">
-			<div class="plans-section__card backg-white">
-				<div class="plans-section__card-title backg-cyan">
-					<h3 class="text-center cvp"><span class="text-1rem">PLAN</span><br> ALMENDRA</h3>
+			<div class="plans-section__card flex flex-column backg-white">
+				<div class="plans-section__card-title backg-cyan text-center">
+					<img src="img/almendra.png" alt="">
+					<h3><span class="text-1rem">PLAN</span><br> ALMENDRA</h3>
 				</div>
 				<div class="plans-section__card-body">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum quidem, saepe molestiae dicta. Delectus explicabo excepturi id maiores. Mollitia delectus, at recusandae nesciunt dolore voluptatem et quam aperiam excepturi?</p>	
@@ -101,9 +120,10 @@
 			</div>
 		</div>
 		<div class="ed-item s-100 l-25">
-			<div class="plans-section__card backg-white">
-				<div class="plans-section__card-title backg-orange">
-					<h3 class="text-center cvp"><span class="text-1rem">PLAN</span><br>REGIONAL</h3>
+			<div class="plans-section__card flex flex-column backg-white">
+				<div class="plans-section__card-title text-center backg-orange">
+					<img src="img/regional.png" alt="">
+					<h3 class="text-center"><span class="text-1rem">PLAN</span><br>REGIONAL</h3>
 				</div>
 				<div class="plans-section__card-body">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum quidem, saepe molestiae dicta. Delectus explicabo excepturi id maiores. Mollitia delectus, at recusandae nesciunt dolore voluptatem et quam aperiam excepturi?</p>	
@@ -114,9 +134,10 @@
 			</div>
 		</div>
 		<div class="ed-item s-100 l-25">
-			<div class="plans-section__card backg-white">
-				<div class="plans-section__card-title backg-yellow">
-					<h3 class="text-center cvp"><span class="text-1rem">PLAN</span><br>COSECHA</h3>
+			<div class="plans-section__card flex flex-column backg-white">
+				<div class="plans-section__card-title text-center backg-yellow">
+					<img src="img/cosecha.png" alt="">
+					<h3><span class="text-1rem">PLAN</span><br>COSECHA</h3>
 				</div>
 				<div class="plans-section__card-body">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum quidem, saepe molestiae dicta. Delectus explicabo excepturi id maiores. Mollitia delectus, at recusandae nesciunt dolore voluptatem et quam aperiam excepturi?</p>	
@@ -139,49 +160,49 @@
 		<div class="ed-item s-100">
 			<h2 class="cvp text-green-title text-center">ATRACCIONES</h2>
 		</div>
-		<div class="ed-item s-100 l-20 attractions-section__box backg-cyan">
+		<div class="ed-item s-100 l-20 attractions-section__box backg-cyan flex no-padding">
 			<div class="attractions-section__box-text">
 				<h4>Lorem Impsum dolor</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
 		</div>
-		<div class="ed-item s-100 l-20 attractions-section__box backg-cyan">
+		<div class="ed-item s-100 l-20 attractions-section__box flex no-padding">
 			<div class="attractions-section__box-text">
 				<h4>Lorem Impsum dolor</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
 		</div>
-		<div class="ed-item s-100 l-20 attractions-section__box backg-cyan">
+		<div class="ed-item s-100 l-20 attractions-section__box flex no-padding">
 			<div class="attractions-section__box-text">
 				<h4>Lorem Impsum dolor</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
 		</div>
-		<div class="ed-item s-100 l-20 attractions-section__box backg-cyan">
+		<div class="ed-item s-100 l-20 attractions-section__box flex no-padding">
 			<div class="attractions-section__box-text">
 				<h4>Lorem Impsum dolor</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
 		</div>
-		<div class="ed-item s-100 l-20 attractions-section__box backg-cyan">
+		<div class="ed-item s-100 l-20 attractions-section__box flex no-padding">
 			<div class="attractions-section__box-text">
 				<h4>Lorem Impsum dolor</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
 		</div>
-		<div class="ed-item s-100 l-20 attractions-section__box backg-cyan">
+		<div class="ed-item s-100 l-20 attractions-section__box flex no-padding">
 			<div class="attractions-section__box-text">
 				<h4>Lorem Impsum dolor</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
 		</div>
-		<div class="ed-item s-100 l-20 attractions-section__box backg-cyan">
+		<div class="ed-item s-100 l-20 attractions-section__box flex no-padding">
 			<div class="attractions-section__box-text">
 				<h4>Lorem Impsum dolor</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
 		</div>
-		<div class="ed-item s-100 l-20 attractions-section__box backg-cyan">
+		<div class="ed-item s-100 l-20 attractions-section__box flex no-padding">
 			<div class="attractions-section__box-text">
 				<h4>Lorem Impsum dolor</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -195,15 +216,23 @@
 			</div>
 			<div class="ed-item s-100 l-50">
 				<div class="blogs-section__card">
-					<img src="https://dummyimage.com/600x200/000/fff" alt="">
+					<img src="img/paisajemedio1.png" alt="">
 					<div class="blogs-section__card-text">
-						<p class="text-green-title">LOREM IMPSUMP DOLOR</p>
+						<p class="text-green-title text-xl">LOREM IMPSUMP DOLOR</p>
 					</div>
 				</div>
 			</div>
 			<div class="ed-item s-100 l-50">
 				<div class="blogs-section__card">
-					<img src="https://dummyimage.com/600x200/000/fff" alt="">
+					<img src="img/paisajemedio2.png" alt="">
+					<div class="blogs-section__card-text">
+						<p class="text-green-title text-xl">LOREM IMPSUMP DOLOR</p>
+					</div>
+				</div>
+			</div>
+			<div class="ed-item s-100 l-25">
+				<div class="blogs-section__card">
+					<img src="img/paisaje1.png" alt="">
 					<div class="blogs-section__card-text">
 						<p class="text-green-title">LOREM IMPSUMP DOLOR</p>
 					</div>
@@ -211,7 +240,7 @@
 			</div>
 			<div class="ed-item s-100 l-25">
 				<div class="blogs-section__card">
-					<img src="https://dummyimage.com/600x200/000/fff" alt="">
+					<img src="img/paisaje2.png" alt="">
 					<div class="blogs-section__card-text">
 						<p class="text-green-title">LOREM IMPSUMP DOLOR</p>
 					</div>
@@ -219,15 +248,7 @@
 			</div>
 			<div class="ed-item s-100 l-25">
 				<div class="blogs-section__card">
-					<img src="https://dummyimage.com/600x200/000/fff" alt="">
-					<div class="blogs-section__card-text">
-						<p class="text-green-title">LOREM IMPSUMP DOLOR</p>
-					</div>
-				</div>
-			</div>
-			<div class="ed-item s-100 l-25">
-				<div class="blogs-section__card">
-					<img src="https://dummyimage.com/600x200/000/fff" alt="">
+					<img src="img/paisaje3.png" alt="">
 					<div class="blogs-section__card-text">
 						<p class="text-green-title">LOREM IMPSUMP DOLOR</p>
 					</div>
@@ -235,7 +256,7 @@
 			</div>
 			<div class="ed-item s-100 l-25">
 				<div class="blogs-section__card">	
-					<img src="https://dummyimage.com/600x200/000/fff" alt="">
+					<img src="img/paisaje4.png" alt="">
 					<div class="blogs-section__card-text">
 						<p class="text-green-title">LOREM IMPSUMP DOLOR</p>
 					</div>
@@ -243,7 +264,7 @@
 			</div>
 			<div class="ed-item s-100 l-25">
 				<div class="blogs-section__card">
-					<img src="https://dummyimage.com/600x200/000/fff" alt="">
+					<img src="img/paisaje1.png" alt="">
 					<div class="blogs-section__card-text">
 						<p class="text-green-title">LOREM IMPSUMP DOLOR</p>
 					</div>
@@ -251,7 +272,7 @@
 			</div>
 			<div class="ed-item s-100 l-25">
 				<div class="blogs-section__card">
-					<img src="https://dummyimage.com/600x200/000/fff" alt="">
+					<img src="img/paisaje2.png" alt="">
 					<div class="blogs-section__card-text">
 						<p class="text-green-title">LOREM IMPSUMP DOLOR</p>
 					</div>
@@ -259,7 +280,7 @@
 			</div>
 			<div class="ed-item s-100 l-25">
 				<div class="blogs-section__card">		
-					<img src="https://dummyimage.com/600x200/000/fff" alt="">
+					<img src="img/paisaje3.png" alt="">
 					<div class="blogs-section__card-text">
 						<p class="text-green-title">LOREM IMPSUMP DOLOR</p>
 					</div>
@@ -267,7 +288,7 @@
 			</div>
 			<div class="ed-item s-100 l-25">
 				<div class="blogs-section__card">	
-					<img src="https://dummyimage.com/600x200/000/fff" alt="">
+					<img src="img/paisaje4.png" alt="">
 					<div class="blogs-section__card-text">
 						<p class="text-green-title">LOREM IMPSUMP DOLOR</p>
 					</div>
@@ -276,32 +297,121 @@
 		</div>
 	</div>
 	<div class="moral-section ed-container flex-h-center">
-		<div class="ed-item s-100 l-20">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolore atque doloremque, saepe dolor consequatur molestias nihil optio? Placeat voluptate hic minima impedit deserunt ducimus optio excepturi, numquam voluptatem iusto.
+		<div class="ed-item s-100 l-20 text-center">
+			<!-- <div class="moral-section__box"> -->
+				<img src="img/moral1.png" alt="">
+				<h5 class="text-red-orange">NO AL TRÁFICO DE BIENES DE INTERÉS CULTURALEN COLOMBIA.</h5>
+				<p> Penalizado según la Ley 63 de 1986 ley 1185 de 2008 y ley 397 de 1997 y demás que lascomplementen o sustituyan.</p>
+			<!-- </div> -->
 		</div>
-		<div class="ed-item s-100 l-20">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non impedit quo atque dolorum doloribus, porro minima libero consectetur, alias perspiciatis maxime incidunt magni voluptate magnam et culpa quidem illum iusto.
+
+		<div class="ed-item s-100 l-20 text-center">
+			<img src="img/moral2.png" alt="">
+			<h5 class="text-brown">NO AL TRÁFICO DE ESPECIES DE FLORA Y FAUNA SILVESTRE.</h5>
+			<p>Penalizado según la ley 17 de 1981 y la resolución ministerial 1367 del 2000.</p>
 		</div>
-		<div class="ed-item s-100 l-20">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum facilis eius quaerat aliquid impedit, laudantium quae mollitia incidunt libero. Cumque incidunt fugiat voluptates doloribus fuga assumenda, itaque eum ullam maiores!
+
+		<div class="ed-item s-100 l-20 text-center">
+			<img src="img/moral3.png" alt="">
+			<h5 class="text-dark-green">SI AL TURISMO. NO A LA EXPLOTACIÓN Y ABUSO SEXUAL DE MENORES Y ADOLESCENTES.</h5>
+			<p>(Penalizado segùn la Ley 679 de 2001 y Ley 1336 de 2009).</p>
 		</div>
-		<div class="ed-item s-100 l-20">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus possimus pariatur, quis enim itaque illo vitae optio expedita earum ab libero quod at impedit rerum aliquid labore provident eius! Nihil?
+
+		<div class="ed-item s-100 l-20 text-center">
+			<img src="img/moral4.png" alt="">
+			<h5 class="text-yellow">SI A UN TRATO JUSTO E IGUALITARIO, PROMOVEMOS LA PROTECCIÓN DE LOS DERECHOS DE TODAS AQUELLAS PERSONAS Y COMUNIDADES EN GENERAL CON LAS CUALES INTERACTUAMOS.</h5>
+			<p>Conforme la ley 1482 de 2011 rechazando cualquier acto de racismo o discriminación</p>		
 		</div>
 	</div>
-	<div class="map-section">
-		
+	<div class="total-footer ed-container full">
+		<div class="register-box--mod ed-item s-100 l-25 ed-container">
+			<div class="ed-item s-100">	
+				<h2 class="text-center text-white">RESERVA AHORA</h2>
+			</div>	
+			<form action="" class=" ed-item s-100 ed-container">
+				<div class="ed-item s-100">			
+					<label for="user">Nombre</label>
+					<input class="full-width" type="text" name="user">
+				</div>
+				<div class="ed-item s-100">	
+					<label for="mail">Correo electrónico</label>
+					<input class="full-width" type="email" name="mail">
+				</div>
+				<div class="ed-item s-100 l-50">
+					<label for="date">FECHA</label>
+					<select name="date" id="">
+						<option value="">1</option>
+						<option value="">2</option>
+					</select>
+				</div>
+				<div class="ed-item s-100 l-50">
+					<label for="people">PERSONAS</label>
+					<select name="people" id="">
+						<option value="">1</option>
+						<option value="">2</option>
+					</select>
+				</div>
+				<div class="ed-item s-100 l-50">
+					<label for="oldpeople">ADULTOS</label>
+					<select name="oldpeople" id="">
+						<option value="">1</option>
+						<option value="">2</option>
+					</select>
+				</div>
+				<div class="ed-item s-100 l-50">
+	
+					<label for="boys">NIÑOS</label>
+					<select name="boys" id="">
+						<option value="">1</option>
+						<option value="">2</option>
+					</select>
+				</div>
+				<div class="ed-item s-100 l-50">	
+					<label for="plan">PLAN</label>
+					<select name="plan" id="">
+						<option value="">plan1</option>
+						<option value="">plan2</option>
+					</select>
+				</div>
+			<div class="ed-item s-100 text-center">	
+				<button class="text-white backg-green">ENVIAR</button>
+			</div>
+			</form>
+		</div>
+		<div class="ed-item s-100 map-section no-padding">
+			<img src="img/map.png" alt="" style="width: 100%;">
+		</div>
+		<footer class="ed-item s-100 ed-container text-white full">
+			<div class="ed-item s-100 l-25">
+				<h3>CONTACTO</h3>
+				<p>
+					CAFENTREMONTANAS@GMAIL.COM
+					
+					(+57) 320 584 3586
+					
+					VEREDA EL BOTÓN, SALAMINA (CALDAS - COLOMBIA)
+					
+					COORDENADAS/COORDINATES: 524199 - 753115</p>
+			</div>
+			<div class="ed-item s-100 l-15">
+				<h3>SIGUENOS</h3>
+				<ul class="flex">
+					<li><a href="" class="text-white"><i class="icon-facebook flex flex-v-center"></i></a></li>
+					<li><a href="" class="text-white"><i class="icon-twitter-alt flex flex-v-center"></i></a></li>
+					<li><a href="" class="text-white"><i class="icon-instagram flex flex-v-center"></i></a></li>
+				</ul>
+			</div>
+			<div class="ed-item s-100 l-25">
+				<h3>ALIADOS</h3>
+				<p>Hospedaje Casa Real</p>
+			</div>
+		</footer>
 	</div>
-	<footer class="ed-container flex-h-center text-white">
-		<div class="ed-item s-100 l-25">
-			<h4>CONTACTO</h4>
-		</div>
-		<div class="ed-item s-100 l-25">
-			<h4>SIGUENOS</h4>
-		</div>
-		<div class="ed-item s-100 l-25">
-			<h4>ALIADOS</h4>
-		</div>
-	</footer>
+	<script
+  		src="https://code.jquery.com/jquery-3.2.1.min.js"
+  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  		crossorigin="anonymous">
+  </script>
+<!--   <script src="js/scripts.js"></script> -->
 </body>
 </html>

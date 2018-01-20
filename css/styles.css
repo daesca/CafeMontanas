@@ -1,6 +1,9 @@
 a, a:hover{
 	text-decoration: none;
 }
+ul{
+	list-style: none;
+}
 /*Center Vertical Paddingl*/
 .cvp{
 	padding: 1.5em 0;
@@ -23,6 +26,18 @@ a, a:hover{
 .text-green-title{
 	color: #7DAF12;
 }
+.text-red-orange{
+	color: #FF5F15;
+}
+.text-brown{
+	color: #F1A225;
+}
+.text-dark-green{
+	color: #A4A46B;
+}
+.text-yellow{
+	color: #F9DE61;
+}
 .main-menu{
 	background-color: rgba(255,255,255,.5);
 	position: fixed;
@@ -31,13 +46,17 @@ a, a:hover{
 	list-style: none;
 	display: flex;
 	justify-content: center;
+	margin-bottom: .4em;
 }
 .main-menu nav ul li{
-	padding: 0 2em;
+	margin-top: auto;
+	padding: 0 .6em;
 }
 .main-menu nav ul li a{
-	color: #464545;
+	color: #99999A;
 	position: relative;
+	font-size: .8rem;
+    font-weight: 700;
 }
 .main-menu nav ul li a:hover{
 	color: #7DAF12;
@@ -55,6 +74,9 @@ a, a:hover{
 	height: 2px;
 	width: 100%;
 }
+.main-menu nav ul li:nth-child(4) a:hover:before{
+	display: none;
+}
 .banner-section{
 	background-image: url("../img/atardecermain.jpg");
 	background-position: fixed;
@@ -63,12 +85,65 @@ a, a:hover{
 	min-height: 600px;
 	position: relative;
 }
-.register-box{
+.register-box {
 	background-color: #fff;
+	color: #BABABA;
 	position: absolute;
+	top: 20%;
+    right: 15%;
+    bottom: 20%;
 }
-.register-box form label{
+.register-box--mod{
+	background-color: #598100;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	height: 100%;
+    right: 15%;
+    bottom: 20%;
+}
+.register-box form label, .register-box--mod form label{
 	display: block;
+}
+.register-box button, .register-box--mod button{
+	margin: 1.5em 0;
+	width: 100%;
+}
+.register-box input, .register-box--mod input{
+	border: none;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+}
+.banner-message{
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    position: absolute;
+    left: 8%;
+    bottom: 10%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.banner-section__social{
+	position: absolute;
+	top:15%;
+	right: 0;
+}
+.banner-section__social ul{
+	padding-left: 0;
+}
+.banner-section__social ul li{
+	margin-top: .5em;
+}
+.banner-section__social ul li a{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    margin-left: auto;
+    background-color: green;
 }
 .wwa-section{
 
@@ -85,12 +160,17 @@ a, a:hover{
 }
 .plans-section__card-title{
 	color: #fff;
+	padding: 1em 0;
+}
+.plans-section__card-title h3{
+	margin-top: 0;
 }
 .plans-section__card-body{
 	padding: 0px 18px;
 }
 .plans-section__card-footer{
-	margin: 20px 0;
+	margin-top: auto;
+	margin-bottom: 3em;
 }
 .plans-section__card-footer a{
 	padding: .5rem 5rem;
@@ -116,7 +196,34 @@ a, a:hover{
 	margin: 1em;
 	min-height: 200px;
 }
-
+.attractions-section__box:nth-child(odd){
+	background-image: url("../img/paisaje1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.attractions-section__box:nth-child(even){
+	background-image: url("../img/paisaje2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.attractions-section__box-text{
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #fff;
+    padding: 0 1.3em;
+    margin-top: auto;
+	width: 100%;
+}
+.attractions-section__box-text p{
+	height: 0;
+	margin: 0;
+	transition: 1s height;
+}
+.attractions-section__box-text:hover{
+	cursor: pointer;
+}
+.attractions-section__box-text:hover p{
+	height: 100px;
+}
 /*Blogs section*/
 .blogs-section__card{
 	box-shadow: 3px 3px 9px #6666669c;
@@ -125,25 +232,66 @@ a, a:hover{
 .blogs-section__card img{
 	width: 100%;
 }
+.blogs-section__card-text p{
+    font-size: .7rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1em;
+    margin: 0;
+}
+.text-xl{
+    padding: 1.5em !important;
+    text-align: left !important;
+}
 
 /*Moral section*/
 .moral-section{
+	font-size: .8rem;
 	padding-top: 2em;
 	padding-bottom: 2em;
 }
-.moral-section div{
+.moral-section div.ed-item{
+	position: relative;
+}
+.moral-section div.ed-item:before{
+	content: "";
+	position: absolute;
+	width: 1px;
+	right: 0;
+	height: 80%;
 	border-right: 1px solid #ccc;
 }
-.moral-section div:last-child{
+.moral-section div:last-child:before{
 	border-right: none;
 }
+.total-footer{
+	position: relative;
+}
 
+/*Map section*/
+.map-section{
+	max-height: 230px;
+	overflow: hidden;
+}
 /*Footer section*/
 footer{
 	background-color: #673F1D;
+	padding-left: 3em !important;
 }
 footer div{
 	color: inherit;
+}
+footer ul{
+	padding-left: 0;
+}
+footer ul li:nth-child(2){
+	padding: 0 1em;
+}
+footer ul li a i:before{
+	font-size: 1.3rem;
+}
+footer p{
+	font-size: .8rem;
 }
 /*Text-dimensions*/
 .text-1rem{
