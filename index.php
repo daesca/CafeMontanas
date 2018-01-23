@@ -1,3 +1,6 @@
+<!-- <?php
+	defined ('_JEXEC') or die ('resticted access');
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,19 +15,19 @@
 	<div class="main-menu ed-container full">
 		<nav class="ed-item s-100">
 			<ul>
-				<li><a href="#">HOME</a></li>
-				<li><a href="#wwa-section">QUIENES SOMOS</a></li>
-				<li><a href="#plans-section">PLANES</a></li>
-				<li><a href="#"><img src="img/cafemontanamenu.png" alt=""></a></li>
-				<li><a href="#attractions-section">ATRACCIONES</a></li>
-				<li><a href="#blogs-section">BLOG</a></li>
-				<li><a href="#">CONTACTO</a></li>
+				<li><a href="#" data-dir="banner-section">HOME</a></li>
+				<li><a href="#" data-dir="wwa-section">QUIENES SOMOS</a></li>
+				<li><a href="#" data-dir="plans-section">PLANES</a></li>
+				<li><a href="#" data-dir=""><img src="img/cafemontanamenu.png" alt=""></a></li>
+				<li><a href="#" data-dir="attractions-section">ATRACCIONES</a></li>
+				<li><a href="#" data-dir="blogs-section">BLOG</a></li>
+				<li><a href="#" data-dir="">CONTACTO</a></li>
 			</ul>
 		</nav>
 	</div>
 	<div class="banner-section ed-container full">
 		<div class="register-box ed-item s-100 l-25 ed-container">
-			<div class="ed-item s-100">	
+			<div class="ed-item s-100 flex flex-v-center flex-h-center">	
 				<h2 class="text-center text-green-title">RESERVA AHORA</h2>
 			</div>	
 			<form action="" class=" ed-item s-100 ed-container">
@@ -93,17 +96,48 @@
 		<div class="ed-item s-100">
 			<h2 class="cvp text-green-title text-center">QUIENES SOMOS</h2>
 		</div>
-		<div class="ed-item s-100 l-30">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolor, quas eveniet voluptatem quos commodi nisi! Voluptate ea aliquid iure dolore, rem cupiditate alias, repellat nam officia quidem autem doloremque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quo corporis quae nulla blanditiis quod facilis velit at. Odio ut, doloremque, explicabo totam consequuntur temporibus debitis. Autem, cupiditate! Deleniti, impedit.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum autem voluptates eos, tempore et porro impedit ducimus sapiente iusto, itaque. Molestias eveniet nostrum necessitatibus, soluta doloremque porro quisquam ea delectus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, sunt, laudantium! Earum ipsum dolorem iusto. Amet perspiciatis quisquam sint facilis blanditiis animi, atque sed necessitatibus saepe doloremque suscipit, asperiores, ratione.</p>
+		<div class="ed-item s-100 no-padding">
+			<div class="container-tabs">
+				<button id="defaultOpen" class="wwa-section__tabs" onclick="openCity(event, 'we')">Nosotros</a>
+				<button class="wwa-section__tabs" onclick="openCity(event, 'salamina')">Salamina</a>
+			</div>
+
 		</div>
-		<div class="ed-item base-100 l-60">
-			<img src="img/paisajemedio1.png" alt="">
+
+		<div id="we" class="ed-item s-100 ed-container wwa-section__tabs-content">
+			<div class="ed-item s-100 l-30 ed-container full">
+				Nosotros
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolor, quas eveniet voluptatem quos commodi nisi! Voluptate ea aliquid iure dolore, rem cupiditate alias, repellat nam officia quidem autem doloremque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quo corporis quae nulla blanditiis quod facilis velit at. Odio ut, doloremque, explicabo totam consequuntur temporibus debitis. Autem, cupiditate! Deleniti, impedit.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum autem voluptates eos, tempore et porro impedit ducimus sapiente iusto, itaque. Molestias eveniet nostrum necessitatibus, soluta doloremque porro quisquam ea delectus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, sunt, laudantium! Earum ipsum dolorem iusto. Amet perspiciatis quisquam sint facilis blanditiis animi, atque sed necessitatibus saepe doloremque suscipit, asperiores, ratione.</p>
+				<div class="ed-item s-100 l-90 wwa-section__tabs-content_text-footer">
+					<p style="">
+						Vive con nosotros una experiencia cafetera unica
+					</p>
+				</div>
+			</div>
+			<div class="ed-item base-100 l-60">
+				<img src="img/paisajemedio1.png" alt="">
+			</div>
+		</div>
+		<div id="salamina" class="ed-item s-100 ed-container wwa-section__tabs-content">
+			<div class="ed-item s-100 l-30 ed-container wwa-section__tabs-content-text">
+				Salamina
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolor, quas eveniet voluptatem quos commodi nisi! Voluptate ea aliquid iure dolore, rem cupiditate alias, repellat nam officia quidem autem doloremque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quo corporis quae nulla blanditiis quod facilis velit at. Odio ut, doloremque, explicabo totam consequuntur temporibus debitis. Autem, cupiditate! Deleniti, impedit.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum autem voluptates eos, tempore et porro impedit ducimus sapiente iusto, itaque. Molestias eveniet nostrum necessitatibus, soluta doloremque porro quisquam ea delectus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, sunt, laudantium! Earum ipsum dolorem iusto. Amet perspiciatis quisquam sint facilis blanditiis animi, atque sed necessitatibus saepe doloremque suscipit, asperiores, ratione.</p>
+				<div class="ed-item s-100 l-90 wwa-section__tabs-content_text-footer">
+					<p style="">
+							Vive con nosotros una experiencia cafetera unica
+					</p>
+				</div>
+			</div>
+			<div class="ed-item base-100 l-60 wwa-section__tabs-content-slider">
+				<img src="img/paisajemedio1.png" alt="">
+			</div>
 		</div>
 	</div>
 	<div class="plans-section ed-container flex-h-center full">
 		<div class="ed-item s-100">
-			<h2 class="text-green-title">PLANES</h2>
+			<h2 class="text-green-title text-center">PLANES</h2>
 		</div>
 		<div class="ed-item s-100 l-25">
 			<div class="plans-section__card flex flex-column backg-white">
@@ -412,6 +446,6 @@
   		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   		crossorigin="anonymous">
   </script>
-<!--   <script src="js/scripts.js"></script> -->
+  <script src="js/scripts.js"></script>
 </body>
 </html>

@@ -41,6 +41,7 @@ ul{
 .main-menu{
 	background-color: rgba(255,255,255,.5);
 	position: fixed;
+	z-index: 10;
 }
 .main-menu ul{
 	list-style: none;
@@ -53,7 +54,7 @@ ul{
 	padding: 0 .6em;
 }
 .main-menu nav ul li a{
-	color: #99999A;
+	color: #5d5d5f;
 	position: relative;
 	font-size: .8rem;
     font-weight: 700;
@@ -79,10 +80,10 @@ ul{
 }
 .banner-section{
 	background-image: url("../img/atardecermain.jpg");
-	background-position: fixed;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 600px;
+	min-height: 800px;
 	position: relative;
 }
 .register-box {
@@ -148,7 +149,66 @@ ul{
 .wwa-section{
 
 }
-
+.container-tabs{
+	margin-bottom: 1em;
+	position: relative;
+}
+.container-tabs:before{
+    content: "";
+    border-bottom: 1px solid #ccc;
+    height: 15px;
+    width: 100%;
+    position: absolute;
+    bottom: -4px;
+}
+.wwa-section__tabs{
+	font-weight: 700;
+	background: none;
+	position: relative;
+	margin: 0;
+	color: #5d5d5f;
+}
+.wwa-section__tabs:hover{
+	background: none;
+}
+.wwa-section__tabs:focus{
+	border: none;
+}
+.active{
+	color: #7DAF12;
+}
+.active:before{
+	content: "";
+    background-color: #7DAF12;
+    height: 3px;
+    transition: .5s all;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+}
+.wwa-section__tabs-content{
+	display: none;
+	color: #5d5d5f;
+}
+.wwa-section__tabs-content_text-footer{
+	margin-left: auto;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.wwa-section__tabs-content_text-footer p{
+	font-size: 1rem;
+	margin: 0;
+	position:relative;
+}
+.wwa-section__tabs-content_text-footer p:before{
+	content:"";
+	background-color: #7DAF12;
+	position: absolute;
+	left: -20px;
+	height: 100%;
+	width:6px;
+}
 /*Plans section*/
 .plans-section{
 	background-color: #EBEBEB;
@@ -183,7 +243,7 @@ ul{
 /*invitation section*/
 .invitation-section{
 	background-image: url("../img/atardecermain.jpg");
-	background-position: fixed;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 }

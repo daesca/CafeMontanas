@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+
+
+
+<!DOCTYPE install PUBLIC "-//Joomla! 3.0//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+
+
+
+
+
+
+
+<extension version="3.0" type="template" client="site">
+
+
+
+
+
+
+
+    <name>Cafe Montañas</name>
+
+
+
+
+
+
+
+    <creationDate>2018/01/25</creationDate>
+
+
+
+
+
+
+
+    <author>Juan Duque(@rDuuke) - Escarabajoweb</author>
+
+
+
+
+
+
+
+    <authorEmail>juuanduuke@gmail.com - juan.duque@escarabajoweb.com</authorEmail>
+
+
+
+
+
+
+
+    <authorUrl>http://www.escarabajoweb.com</authorUrl>
+
+
+
+
+
+
+
+    <copyright>Copyright (c) 2017 Escarabajoweb</copyright>
+
+
+
+
+
+
+
+    <license>GPL</license>
+
+
+
+
+
+
+
+    <version>1.0.0</version>
+
+
+
+
+
+
+
+    <description>Plantilla para el sitio de Cafe Montañas</description>
+
+
+
+
+
+
+
+    <files>
+
+
+
+
+
+
+
+        <filename>index.php</filename>
+
+
+
+
+
+
+
+        <filename>templateDetails.xml</filename>
+
+
+
+
+
+
+
+        <folder>css</folder>
+
+
+
+
+
+
+
+        <folder>fonts</folder>
+
+
+
+
+
+
+
+        <folder>img</folder>
+
+
+        
+
+        <folder>js</folder>
+
+
+
+
+    </files>
+
+
+
+
+
+
+
+    <positions>
+       <position>Menu</position>
+       <position>Banner</position>
+       <position>Whoweare</position>
+       <position>Plans</position>
+       <position>Invitation</position>
+       <position>Attractions</position>
+       <position>Blogs</position> 
+       <position>Values</position>
+       <position>Footer</position>
+    </positions>
+
+
+
+
+
+
+
+</extension>
